@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>zrz-ppt</title>
+  		<meta name="apple-mobile-web-app-capable" content="yes">
+  		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  		<!-- Reveal base style -->
+  		<link rel="stylesheet" href="https://yanshuo.io/assets/player/css/reveal.min.css">
+  		<!-- Yanshuo.io seed style -->
+  		<link rel="stylesheet" href="https://yanshuo.io/assets/player/atcss/at-block.min.css">
+  		<link rel="stylesheet" href="https://yanshuo.io/assets/player/atcss/at-hljs-theme-bundler.min.css">
+  		<link rel="stylesheet" href="https://yanshuo.io/assets/player/atcss/at-reveal-theme-bundler.min.css">
+
+  		<!-- Source Sans Web Fonts -->
+  		<link rel="stylesheet" href="https://yanshuo.io/assets/player/lib/font/source-sans-pro/source-sans-pro.css">
+
+      <!-- Printing and PDF exports -->
+      <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'https://yanshuo.io/assets/player//css/print/pdf.css' : '';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      </script>
+
+      <!--[if lt IE 9]>
+  		<script src="lib/js/html5shiv.js"></script>
+  		<![endif]-->
+
+  		<!-- style for "critical path" -->
+  		<style>
+  	  </style>
+  </head>
+  <body>
+    <!-- TODO: a lightweighted loading -->
+
+    <!-- main slides -->
+    <div id="YS" class="at-code-lh-NaN" style="width:100%;height:100%;" data-reveal-theme="league" data-highlight-theme="github" data-ys-title="我的演说" data-ys-user="劳卜" data-ys-transition="slide" data-ys-backgroundTransition="concave" data-ys-transitionSpeed="default"><div class="reveal"><div class="slides"><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:-134px;top:257px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><h1>前端开发</h1><p>&nbsp;</p></article></div><div style="left:326px;top:274px;width:796px;height:auto;" class="at-block at-block--pure"><article class="at-block-content"><h2><span style="font-size:72px">走进&nbsp;</span>&nbsp; &nbsp; &nbsp;<span style="color:#B0BC00"><em><strong>ue.js</strong></em></span></h2></article></div><div style="width:149px;height:149px;left:665px;top:203px;" class="at-block at-block--pure"><article class="at-block-content"><img src=http://cn.vuejs.org/images/logo.png /></article></div><div style="left:94px;top:296px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><p>@</p></article></div><div style="left:91.98460396957893px;top:491.3782229641996px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><p><span style="font-size:22px">劳卜原创</span></p></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><h1>Vue.js简介</h1><p>&nbsp;</p></article></div><div style="left:89px;top:350px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><ul><li>Vue.js是一个构建<span style="color:#E27300">数据驱动</span>的 web 界面的框架</li><li>Vue.js 的目标是实现响应的<span style="color:#E27300">数据绑定</span>和组合的<span style="color:#E27300">视图组件</span></li><li>Vue.js 的核心是一个响应的<span style="color:#E27300">数据绑定系统</span></li></ul></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="width:898.9056730446458px;height:477.5436388049681px;left:38.77139979859013px;top:104.17883517959046px;" class="at-block at-block--pure"><article class="at-block-content"><img src=http://cn.vuejs.org/images/mvvm.png /></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:79px;top:60px;width:800px;height:600px;" class="at-block at-block--pure"><article class="at-block-content"><iframe src='http://cn.vuejs.org/' data-prevent-swipe allowfullscreen></iframe></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><h1>Vue实例</h1></article></div><div style="left:101.07382674828418px;top:315.15674271934705px;width:800px;height:500px;" class="at-block at-block--pure"><article class="at-block-content MarkdownBlock"><pre class="hljs"><code class="lang-javascript">var <span class="hljs-keyword">vm</span> = <span class="hljs-keyword">new</span> Vue({
+    <span class="hljs-keyword">e</span><span class="hljs-variable">l:</span> <span class="hljs-string">'#demo'</span>,
+    dat<span class="hljs-variable">a:</span> {
+        <span class="hljs-variable">a:</span> <span class="hljs-number">1</span>,
+        <span class="hljs-variable">b:</span> <span class="hljs-number">2</span>
+    },
+    created: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+
+        // `this` 指向 <span class="hljs-keyword">vm</span> 实例
+        console.<span class="hljs-built_in">log</span>(<span class="hljs-string">'a is: '</span> + this.<span class="hljs-keyword">a</span>)
+    }
+})
+</code></pre>
+</article></div><div style="left:103.67074754219996px;top:244.67074754219996px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><p><span style="font-size:26px">包含数据、模板、挂载元素、方法、生命周期钩子等选项</span></p></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:85.19384158783157px;top:15.600074197736966px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><h1>Vue常用指令</h1></article></div><div style="left:91.68614357262103px;top:143.7599703209052px;width:800px;height:550.6399554813579px;" class="at-block at-block--pure"><article class="at-block-content MarkdownBlock"><pre class="hljs"><code class="lang-html">    &lt;<span class="hljs-selector-tag">div</span> id=<span class="hljs-string">"demo"</span>&gt;
+        &lt;<span class="hljs-selector-tag">p</span> v-text=<span class="hljs-string">"p1"</span>&gt;&lt;/p&gt;
+
+        &lt;<span class="hljs-selector-tag">p</span> v-html=<span class="hljs-string">"p2"</span>&gt;&lt;/p&gt;
+
+        &lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">if</span>=<span class="hljs-string">"p3"</span>&gt;&lt;/p&gt;
+
+        &lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">else</span>&gt;&lt;/p&gt;
+
+        &lt;<span class="hljs-selector-tag">p</span> v-show=<span class="hljs-string">"p5"</span>&gt;&lt;/p&gt;
+
+        &lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">for</span>=<span class="hljs-string">"p in p6"</span>&gt;{{ <span class="hljs-selector-tag">p</span> }}&lt;/p&gt;
+
+        &lt;<span class="hljs-selector-tag">p</span> v-on:click=<span class="hljs-string">"showP3"</span>&gt;&lt;/p&gt;
+
+        &lt;<span class="hljs-selector-tag">p</span> v-bind:title=<span class="hljs-string">"p7"</span>&gt;&lt;/p&gt;
+
+        &lt;<span class="hljs-selector-tag">input</span> v-model=<span class="hljs-string">"p8"</span>&gt;&lt;/p&gt;
+
+        &lt;<span class="hljs-selector-tag">p</span> v-cloak&gt;{{ p9 }}&lt;/p&gt;
+    &lt;div&gt;
+</code></pre>
+</article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><h1>Vue.js技术栈</h1></article></div><div style="left:235.8548005207291px;top:261.4918900864763px;width:198.81283620849567px;height:auto0;" class="at-block at-block--pure"><article class="at-block-content"><p><span style="font-size:48px"><span style="color:#A4DD00">Vue.js</span></span></p></article></div><div style="left:210.67635496331863px;top:405.3682953742418px;width:259.84047486551657px;height:auto0;" class="at-block at-block--pure"><article class="at-block-content"><p><span style="font-size:48px"><span style="color:#E27300">vue-router</span></span></p></article></div><div style="left:246.52199340850615px;top:479.2514087202517px;width:174.14208866629565px;height:auto;" class="at-block at-block--pure"><article class="at-block-content"><p><span style="font-size:48px"><span style="color:#73D8FF">Vuex</span></span></p></article></div><div style="left:260.14339553278063px;top:555.9387044873379px;width:148.1728807271378px;height:auto;" class="at-block at-block--pure"><article class="at-block-content"><p><span style="font-size:48px"><span style="color:#F44E3B">ES6</span></span></p></article></div><div style="left:516.5693852515744px;top:336.2671253028294px;width:237.76664811723242px;height:auto;" class="at-block at-block--pure"><article class="at-block-content"><p><span style="color:#7B64FF"><span style="font-size:48px">webpack</span></span></p></article></div><div style="left:551.9612574611036px;top:258.5242608106496px;width:167.64978668150616px;height:auto;" class="at-block at-block--pure"><article class="at-block-content"><p><span style="color:#FCC400"><span style="font-size:48px">NPM</span></span></p></article></div><div style="left:520.39512872803px;top:408.84164667418725px;width:239.06510851419029px;height:auto0;" class="at-block at-block--pure"><article class="at-block-content"><p><span style="font-size:48px">Babel</span></p></article></div><div style="left:174.38452977184195px;top:339.75681691708405px;width:323.46503431645334px;height:auto;" class="at-block at-block--pure"><article class="at-block-content"><p><span style="font-size:48px"><span style="color:#FA28FF">vue-cli</span></span></p></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><h1>构建大型应用</h1></article></div><div style="left:203.6521981079577px;top:278.97236134297896px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><ul><li>项目前端目录及文件构建（<span style="color:#E27300">vue-cli</span>）</li></ul></article></div><div style="left:201.96605453533667px;top:365.5815247634946px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><ul><li>组件编写及通信（<span style="color:#E27300">什么是组件？</span>）</li></ul></article></div><div style="left:198.98145056575774px;top:454.7876089779261px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><ul><li> 插件使用与文件打包（<span style="color:#E27300">webpack</span>）</li></ul></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><h1>vue-cli构建</h1></article></div><div style="left:91.98460396957893px;top:232.05527731404197px;width:800px;height:124.74494527916897px;" class="at-block at-block--pure"><article class="at-block-content MarkdownBlock"><pre class="hljs"><code>npm install -<span class="hljs-keyword">g</span> vue-<span class="hljs-keyword">cli</span>
+</code></pre>
+</article></div><div style="left:91px;top:314.3505843071786px;width:800px;height:113.05880170654797px;" class="at-block at-block--pure"><article class="at-block-content MarkdownBlock"><pre class="hljs"><code>vue init webpack <span class="hljs-keyword">my</span>-project
+</code></pre>
+</article></div><div style="left:90.61231682433686px;top:393.1689853459469px;width:800px;height:113.05880170654797px;" class="at-block at-block--pure"><article class="at-block-content MarkdownBlock"><pre class="hljs"><code>cd <span class="hljs-keyword">my</span>-project
+</code></pre>
+</article></div><div style="left:90.1200148395474px;top:472.98738638471525px;width:800px;height:113.05880170654797px;" class="at-block at-block--pure"><article class="at-block-content MarkdownBlock"><pre class="hljs"><code>npm <span class="hljs-keyword">install</span>
+</code></pre>
+</article></div><div style="left:90.73233166388425px;top:557.298089408273px;width:800px;height:113.05880170654797px;" class="at-block at-block--pure"><article class="at-block-content MarkdownBlock"><pre class="hljs"><code>npm <span class="hljs-built_in">run</span> dev
+</code></pre>
+</article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:79px;top:270px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><h1>什么是组件？</h1></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="width:636.6423357664235px;height:700px;left:329.18022332435646px;top:-7.790762381747357px;" class="at-block at-block--pure"><article class="at-block-content"><img src=http://vuefe.cn/images/vue-component.png /></article></div><div style="left:112.86458913003156px;top:97.94472268595811px;width:183.23131144500087px;height:auto0;" class="at-block at-block--pure"><article class="at-block-content"><p><span style="color:#FE9200"><span style="font-size:72px">单</span></span></p><p><span style="color:#FE9200"><span style="font-size:72px">文</span></span></p><p><span style="color:#FE9200"><span style="font-size:72px">件</span></span></p><p><span style="color:#FE9200"><span style="font-size:72px">组</span></span></p><p><span style="color:#FE9200"><span style="font-size:72px">件</span></span></p></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:95.8799851604526px;top:59.747727694305325px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><h1>父子组件通信</h1></article></div><div style="width:505.63717306622146px;height:413.470397216176px;left:248.6060100166945px;top:230.96347405075034px;" class="at-block at-block--pure"><article class="at-block-content"><img src=http://vuefe.cn/images/props-events.png /></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><h1>插件使用</h1></article></div><div style="left:111.46150992394732px;top:242.07382674828418px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><p style="text-align:left"><span style="color:#E27300">全局使用：</span></p></article></div><div style="left:85.49230198478946px;top:238.1784455574105px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><p>1. 在index.html引入</p></article></div><div style="left:169.8922277870525px;top:299.20608421443154px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><p>2. 通过webpack配置文件引入</p></article></div><div style="left:129.63995548135782px;top:360.2337228714524px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><p>3. import + Vue.use()引入</p></article></div><div style="left:-205.3628269337785px;top:444.63364867371547px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><p><span style="color:#E27300">单文件使用：</span></p></article></div><div style="left:79px;top:440.7382674828419px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><p>1. import 直接引入</p></article></div><div style="left:155.60916342051567px;top:500.4674457429048px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><p>2. import + components 注册</p></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><h1>部署及优化</h1></article></div><div style="left:77.70153960304211px;top:288.0615841216843px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><ul><li><span style="font-size:28px">使用 Webpack 的&nbsp;<a target="_blank" href="http://webpack.github.io/docs/list-of-plugins.html#defineplugin"><span style="color:#73D8FF">DefinePlugin</span></a>&nbsp;来指定生产环境</span></li><li><span style="font-size:28px">使用&nbsp;<span style="color:#73D8FF">UglifyJS&nbsp;</span>自动删除代码块内的警告语句</span></li><li><span style="font-size:28px">使用 Webpack <span style="color:#73D8FF">hash&nbsp;</span>缓存处理</span></li><li><span style="font-size:28px">使用 <span style="color:#73D8FF">v-if</span> 减少不必要的组件加载</span></li></ul></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:92px;top:42px;width:800px;height:600px;" class="at-block at-block--pure"><article class="at-block-content"><iframe src='https://luozhihao.github.io/vue-puzzle/index.html#!/' data-prevent-swipe allowfullscreen></iframe></article></div></section><section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out"><div style="left:83px;top:225px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><h1>END.</h1></article></div><div style="left:82px;top:374px;width:800px;" class="at-block at-block--pure"><article class="at-block-content"><p><span style="font-size:16px">更多精彩文章，请关注微信公众号：前端呼啦圈（Love-FED）</span></p></article></div></section><style>.at-block{ position:absolute }</style></div></div></div>
+
+    <!-- dependencies -->
+		<script src="https://yanshuo.io/assets/player/lib/js/head.min.js"></script>
+		<script src="https://yanshuo.io/assets/player/js/reveal.min.js"></script>
+
+    <!-- init -->
+    <script>
+      Reveal.initialize({
+        controls: true,
+        history: true,
+        center: false,
+        transition:             'slide',
+        backgroundTransition:   'concave',
+        transitionSpeed:        'default',
+        // no marked.js
+				// no markdown.js
+				// no highlight.js
+				dependencies: [
+					{ src: 'https://yanshuo.io/assets/player/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'https://yanshuo.io/assets/player/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'https://yanshuo.io/assets/player/plugin/notes/notes.js', async: true }
+				]
+      });
+    </script>
+  </body>
+</html>
