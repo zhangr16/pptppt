@@ -80,17 +80,53 @@
 							<article class="at-block-content">
 								<ul>
 									<li>Vue.js是一个构建<span style="color:#E27300">数据驱动</span>的web界面的框架</li>
-									<li>Vue.js是实现响应的<span style="color:#E27300">数据绑定</span>和组合<span style="color:#E27300">视图组件</span></li>
 									<li>Vue.js是一个响应的<span style="color:#E27300">数据绑定系统</span></li>
+									<li>Vue.js是实现响应的<span style="color:#E27300">数据绑定</span>和组合<span style="color:#E27300">视图组件</span>--mvvm</li>									
 								</ul>
 							</article>
 						</div>
 					</section>
 					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="width:898.9056730446458px;height:477.5436388049681px;left:38.77139979859013px;top:104.17883517959046px;" class="at-block at-block--pure">
+						<h1>MV XX</h1>
+						<div style="width:900px;height:480px;left:40px;top:150px;" class="at-block at-block--pure">
 							<article class="at-block-content"><img src=http://cn.vuejs.org/images/mvvm.png /></article>
 						</div>
 					</section>
+					<section>
+						<h1>MV XX</h1>
+						<div style="left:89px;top:250px;width:800px;" class="at-block at-block--pure">
+							<article class="at-block-content">
+								<ul>
+									<li>Module层与view层的<span style="color:#E27300">解耦</span>--组件化</li><br>
+									<li>简化代码，减少重复</li><br>
+									<li>专注<span style="color:#E27300">数据</span>驱动，<span style="color:#E27300">数据</span>触发事件</li>
+								</ul>
+							</article>
+						</div>
+					</section>
+					<section>
+						<article class="at-block-content">
+							<h1>VS Jquery</h1>
+							<div style="left:89px;top:250px;width:800px;" class="at-block at-block--pure">
+								<ul>
+									<li>处理，思维模式</li>
+									<li>API</li>
+									<li>兼容性</li>
+									<li>组件</li>
+									<li>实际应用--购物列表</li>
+								</ul>
+							</div>
+						</article>
+					</section>
+					<section>
+						<h3>Jq: 面向过程</h3>
+						<img src="img/1.jpg"/>						
+					</section>
+					<section>
+						<h3>Vue: 面向对象</h3>
+						<img src="img/2.jpg"/>						
+					</section>
+					
 					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
 						<div style="left:79px;top:60px;width:800px;height:600px;" class="at-block at-block--pure">
 							<article class="at-block-content"><iframe src='http://cn.vuejs.org/' data-prevent-swipe allowfullscreen></iframe></article>
@@ -101,20 +137,19 @@
 							<article class="at-block-content">
 								<h1>Vue实例</h1></article>
 						</div>
-						<div style="left:101.07382674828418px;top:315.15674271934705px;width:800px;height:500px;" class="at-block at-block--pure">
+						<div style="left:10px;top:315px;width:800px;height:500px;" class="at-block at-block--pure">
 							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code class="lang-javascript">var <span class="hljs-keyword">vm</span> = <span class="hljs-keyword">new</span> Vue({
-    <span class="hljs-keyword">e</span><span class="hljs-variable">l:</span> <span class="hljs-string">'#demo'</span>,
-    dat<span class="hljs-variable">a:</span> {
-        <span class="hljs-variable">a:</span> <span class="hljs-number">1</span>,
-        <span class="hljs-variable">b:</span> <span class="hljs-number">2</span>
-    },
-    created: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
-
-        // `this` 指向 <span class="hljs-keyword">vm</span> 实例
-        console.<span class="hljs-built_in">log</span>(<span class="hljs-string">'a is: '</span> + this.<span class="hljs-keyword">a</span>)
-    }
-})
-</code></pre>
+							    <span class="hljs-keyword">e</span><span class="hljs-variable">l:</span> <span class="hljs-string">'#demo'</span>,dat<span class="hljs-variable">a:</span> {
+							    <span class="hljs-variable">a:</span> <span class="hljs-number">1</span>,
+							    <span class="hljs-variable">b:</span> <span class="hljs-number">2</span>
+							    },
+							    created: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+							
+							        // `this` 指向 <span class="hljs-keyword">vm</span> 实例
+							        console.<span class="hljs-built_in">log</span>(<span class="hljs-string">'a is: '</span> + this.<span class="hljs-keyword">a</span>)
+							    }
+							})
+							</code></pre>
 							</article>
 						</div>
 						<div style="left:103.67074754219996px;top:244.67074754219996px;width:800px;" class="at-block at-block--pure">
@@ -130,27 +165,27 @@
 						</div>
 						<div style="left:91.68614357262103px;top:143.7599703209052px;width:800px;height:550.6399554813579px;" class="at-block at-block--pure">
 							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code class="lang-html">    &lt;<span class="hljs-selector-tag">div</span> id=<span class="hljs-string">"demo"</span>&gt;
-        &lt;<span class="hljs-selector-tag">p</span> v-text=<span class="hljs-string">"p1"</span>&gt;&lt;/p&gt;
-
-        &lt;<span class="hljs-selector-tag">p</span> v-html=<span class="hljs-string">"p2"</span>&gt;&lt;/p&gt;
-
-        &lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">if</span>=<span class="hljs-string">"p3"</span>&gt;&lt;/p&gt;
-
-        &lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">else</span>&gt;&lt;/p&gt;
-
-        &lt;<span class="hljs-selector-tag">p</span> v-show=<span class="hljs-string">"p5"</span>&gt;&lt;/p&gt;
-
-        &lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">for</span>=<span class="hljs-string">"p in p6"</span>&gt;{{ <span class="hljs-selector-tag">p</span> }}&lt;/p&gt;
-
-        &lt;<span class="hljs-selector-tag">p</span> v-on:click=<span class="hljs-string">"showP3"</span>&gt;&lt;/p&gt;
-
-        &lt;<span class="hljs-selector-tag">p</span> v-bind:title=<span class="hljs-string">"p7"</span>&gt;&lt;/p&gt;
-
-        &lt;<span class="hljs-selector-tag">input</span> v-model=<span class="hljs-string">"p8"</span>&gt;&lt;/p&gt;
-
-        &lt;<span class="hljs-selector-tag">p</span> v-cloak&gt;{{ p9 }}&lt;/p&gt;
-    &lt;div&gt;
-</code></pre>
+						        &lt;<span class="hljs-selector-tag">p</span> v-text=<span class="hljs-string">"p1"</span>&gt;&lt;/p&gt;
+						
+						        &lt;<span class="hljs-selector-tag">p</span> v-html=<span class="hljs-string">"p2"</span>&gt;&lt;/p&gt;
+						
+						        &lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">if</span>=<span class="hljs-string">"p3"</span>&gt;&lt;/p&gt;
+						
+						        &lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">else</span>&gt;&lt;/p&gt;
+						
+						        &lt;<span class="hljs-selector-tag">p</span> v-show=<span class="hljs-string">"p5"</span>&gt;&lt;/p&gt;
+						
+						        &lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">for</span>=<span class="hljs-string">"p in p6"</span>&gt;{{ <span class="hljs-selector-tag">p</span> }}&lt;/p&gt;
+						
+						        &lt;<span class="hljs-selector-tag">p</span> v-on:click=<span class="hljs-string">"showP3"</span>&gt;&lt;/p&gt;
+						
+						        &lt;<span class="hljs-selector-tag">p</span> v-bind:title=<span class="hljs-string">"p7"</span>&gt;&lt;/p&gt;
+						
+						        &lt;<span class="hljs-selector-tag">input</span> v-model=<span class="hljs-string">"p8"</span>&gt;&lt;/p&gt;
+						
+						        &lt;<span class="hljs-selector-tag">p</span> v-cloak&gt;{{ p9 }}&lt;/p&gt;
+						    &lt;div&gt;
+						</code></pre>
 							</article>
 						</div>
 					</section>
@@ -241,27 +276,27 @@
 						</div>
 						<div style="left:91.98460396957893px;top:232.05527731404197px;width:800px;height:124.74494527916897px;" class="at-block at-block--pure">
 							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code>npm install -<span class="hljs-keyword">g</span> vue-<span class="hljs-keyword">cli</span>
-</code></pre>
+								</code></pre>
 							</article>
 						</div>
 						<div style="left:91px;top:314.3505843071786px;width:800px;height:113.05880170654797px;" class="at-block at-block--pure">
 							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code>vue init webpack <span class="hljs-keyword">my</span>-project
-</code></pre>
+								</code></pre>
 							</article>
 						</div>
 						<div style="left:90.61231682433686px;top:393.1689853459469px;width:800px;height:113.05880170654797px;" class="at-block at-block--pure">
 							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code>cd <span class="hljs-keyword">my</span>-project
-</code></pre>
+								</code></pre>
 							</article>
 						</div>
 						<div style="left:90.1200148395474px;top:472.98738638471525px;width:800px;height:113.05880170654797px;" class="at-block at-block--pure">
 							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code>npm <span class="hljs-keyword">install</span>
-</code></pre>
+								</code></pre>
 							</article>
 						</div>
 						<div style="left:90.73233166388425px;top:557.298089408273px;width:800px;height:113.05880170654797px;" class="at-block at-block--pure">
 							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code>npm <span class="hljs-built_in">run</span> dev
-</code></pre>
+								</code></pre>
 							</article>
 						</div>
 					</section>
@@ -291,72 +326,96 @@
 						</div>
 					</section>
 					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:95.8799851604526px;top:59.747727694305325px;width:800px;" class="at-block at-block--pure">
+						<div style="left:79px;top:170px;width:800px;" class="at-block at-block--pure">
 							<article class="at-block-content">
-								<h1>父子组件通信</h1></article>
+								<h1><span style="color: deepskyblue;" >什么是单页面？</h1>
+									<br>
+								<ul style="font-size: 24px;">
+									<li>(spa)单页面是指只有一个主页面的应用，<br>浏览器一开始要加载所有必须的 html, js, css，且所有的页面内容都包含在这个主页面中。</li>
+									<li>会分开写（页面片段），然后在交互的时候由路由程序动态载入。</li>
+								</ul>
+							</article>
 						</div>
-						<div style="width:505.63717306622146px;height:413.470397216176px;left:248.6060100166945px;top:230.96347405075034px;" class="at-block at-block--pure">
-							<article class="at-block-content"><img src=http://vuefe.cn/images/props-events.png /></article>
+					</section>
+					
+					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
+						<div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure">
+							<article class="at-block-content">
+								<h1>特点</h1></article>
+						</div>
+						<div style="left:100px;top:240px;width:800px;" class="at-block at-block--pure">
+							<article class="at-block-content">
+								<p style="text-align:left"><span style="color:#E27300">优势：</span></p>
+							</article>
+						</div>
+						<div style="left:0px;top:240px;width:800px;" class="at-block at-block--pure">
+							<article class="at-block-content">
+								<p>1. 良好的交互体验</p>
+							</article>
+						</div>
+						<div style="left:205px;top:300px;width:800px;" class="at-block at-block--pure">
+							<article class="at-block-content">
+								<p>2. 良好的前后端工作分离模式(RESTful规约)</p>
+							</article>
+						</div>
+						<div style="left:0px;top:360px;width:800px;" class="at-block at-block--pure">
+							<article class="at-block-content">
+								<p>3. 减轻服务器压力</p>
+							</article>
+						</div>
+						<div style="left:-250px;top:450px;width:800px;" class="at-block at-block--pure">
+							<article class="at-block-content">
+								<p><span style="color:#E27300">缺陷：</span></p>
+							</article>
+						</div>
+						<div style="left:-25px;top:450px;width:800px;" class="at-block at-block--pure">
+							<article class="at-block-content">
+								<p>1. SEO难度较高</p>
+							</article>
+						</div>
+						<div style="left:0px;top:530px;width:800px;" class="at-block at-block--pure">
+							<article class="at-block-content">
+								<p>2. 前进、后退管理 </p>
+							</article>
 						</div>
 					</section>
 					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
 						<div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure">
 							<article class="at-block-content">
-								<h1>插件使用</h1></article>
-						</div>
-						<div style="left:111.46150992394732px;top:242.07382674828418px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p style="text-align:left"><span style="color:#E27300">全局使用：</span></p>
+								<h1>什么是路由？</h1>
 							</article>
 						</div>
-						<div style="left:85.49230198478946px;top:238.1784455574105px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p>1. 在index.html引入</p>
-							</article>
-						</div>
-						<div style="left:169.8922277870525px;top:299.20608421443154px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p>2. 通过webpack配置文件引入</p>
-							</article>
-						</div>
-						<div style="left:129.63995548135782px;top:360.2337228714524px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p>3. import + Vue.use()引入</p>
-							</article>
-						</div>
-						<div style="left:-205.3628269337785px;top:444.63364867371547px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p><span style="color:#E27300">单文件使用：</span></p>
-							</article>
-						</div>
-						<div style="left:79px;top:440.7382674828419px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p>1. import 直接引入</p>
-							</article>
-						</div>
-						<div style="left:155.60916342051567px;top:500.4674457429048px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p>2. import + components 注册</p>
-							</article>
-						</div>
-					</section>
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<h1>部署及优化</h1></article>
-						</div>
-						<div style="left:77.70153960304211px;top:288.0615841216843px;width:800px;" class="at-block at-block--pure">
+						<div style="left:78px;top:270px;width:800px;" class="at-block at-block--pure">
 							<article class="at-block-content">
 								<ul>
-									<li><span style="font-size:28px">使用 Webpack 的&nbsp;<a target="_blank" href="http://webpack.github.io/docs/list-of-plugins.html#defineplugin"><span style="color:#73D8FF">DefinePlugin</span></a>&nbsp;来指定生产环境</span>
+									<li><span style="font-size:40px">URL:</span>
+										<ol style="font-size: 30px;">
+											<li>域名</li>
+											<li>协议</li>
+											<li>端口</li>
+											<li>路径</li>										
+											<li><span style="color:#73D8FF">#锚点(非必需)</span></li>
+										</ol>
 									</li>
-									<li><span style="font-size:28px">使用&nbsp;<span style="color:#73D8FF">UglifyJS&nbsp;</span>自动删除代码块内的警告语句</span>
-									</li>
-									<li><span style="font-size:28px">使用 Webpack <span style="color:#73D8FF">hash&nbsp;</span>缓存处理</span>
-									</li>
-									<li><span style="font-size:28px">使用 <span style="color:#73D8FF">v-if</span> 减少不必要的组件加载</span>
+									<br>
+									<li><span style="font-size:40px">解决问题:</span>
+										<ol style="font-size: 30px;">
+											<li>各个页面和组件之间的跳转问题： 组件管理</li>
+											
+											<li>各个组件之间相互调用: 方便<span style="color:#73D8FF">解耦, 交互 -- VUEX</span></li>
+										</ol>
 									</li>
 								</ul>
+							</article>
+						</div>
+					</section>
+					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
+						<div style="left:83px;top:0px;width:800px;" class="at-block at-block--pure">
+							<article class="at-block-content">
+								<h1>VUEX</h1>
+								<article>
+									<img src="img/3.jpg"/>
+								</article>
 							</article>
 						</div>
 					</section>
@@ -364,7 +423,6 @@
 						<div style="left:83px;top:225px;width:800px;" class="at-block at-block--pure">
 							<article class="at-block-content">
 								<h1>END.</h1>
-								<h2>Thank U~</h2>
 							</article>
 						</div>
 					</section>
