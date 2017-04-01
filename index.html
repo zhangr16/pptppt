@@ -81,7 +81,7 @@
 								<ul>
 									<li>Vue.js是一个构建<span style="color:#E27300">数据驱动</span>的web界面的框架</li>
 									<li>Vue.js是一个响应的<span style="color:#E27300">数据绑定系统</span></li>
-									<li>Vue.js是实现响应的<span style="color:#E27300">数据绑定</span>和组合<span style="color:#E27300">视图组件</span>--mvvm</li>									
+									<li>Vue.js是实现响应的<span style="color:#E27300">数据绑定</span>和组合<span style="color:#E27300">视图组件</span>--<i>MVVM</i></li>									
 								</ul>
 							</article>
 						</div>
@@ -128,28 +128,25 @@
 					</section>
 					
 					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:79px;top:60px;width:800px;height:600px;" class="at-block at-block--pure">
-							<article class="at-block-content"><iframe src='http://cn.vuejs.org/' data-prevent-swipe allowfullscreen></iframe></article>
-						</div>
-					</section>
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
 						<div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure">
 							<article class="at-block-content">
 								<h1>Vue实例</h1></article>
 						</div>
 						<div style="left:10px;top:315px;width:800px;height:500px;" class="at-block at-block--pure">
-							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code class="lang-javascript">var <span class="hljs-keyword">vm</span> = <span class="hljs-keyword">new</span> Vue({
-							    <span class="hljs-keyword">e</span><span class="hljs-variable">l:</span> <span class="hljs-string">'#demo'</span>,dat<span class="hljs-variable">a:</span> {
-							    <span class="hljs-variable">a:</span> <span class="hljs-number">1</span>,
-							    <span class="hljs-variable">b:</span> <span class="hljs-number">2</span>
-							    },
-							    created: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+								<article class="at-block-content MarkdownBlock">
+									<pre class="hljs"><code class="lang-javascript">
+var <span class="hljs-keyword">vm</span> = <span class="hljs-keyword">new</span> Vue({
+	<span class="hljs-keyword">e</span><span class="hljs-variable">l:</span> <span class="hljs-string">'#demo'</span>,dat<span class="hljs-variable">a:</span> {
+	<span class="hljs-variable">a:</span> <span class="hljs-number">1</span>,
+	<span class="hljs-variable">b:</span> <span class="hljs-number">2</span>
+	},
+	created: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
 							
-							        // `this` 指向 <span class="hljs-keyword">vm</span> 实例
-							        console.<span class="hljs-built_in">log</span>(<span class="hljs-string">'a is: '</span> + this.<span class="hljs-keyword">a</span>)
-							    }
-							})
-							</code></pre>
+	// `this` 指向 <span class="hljs-keyword">vm</span> 实例
+	console.<span class="hljs-built_in">log</span>(<span class="hljs-string">'a is: '</span> + this.<span class="hljs-keyword">a</span>)
+	}
+})
+</code></pre>
 							</article>
 						</div>
 						<div style="left:103.67074754219996px;top:244.67074754219996px;width:800px;" class="at-block at-block--pure">
@@ -165,27 +162,27 @@
 						</div>
 						<div style="left:91.68614357262103px;top:143.7599703209052px;width:800px;height:550.6399554813579px;" class="at-block at-block--pure">
 							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code class="lang-html">    &lt;<span class="hljs-selector-tag">div</span> id=<span class="hljs-string">"demo"</span>&gt;
-						        &lt;<span class="hljs-selector-tag">p</span> v-text=<span class="hljs-string">"p1"</span>&gt;&lt;/p&gt;
+
+	&lt;<span class="hljs-selector-tag">p</span> v-text=<span class="hljs-string">"p1"</span>&gt;&lt;/p&gt;
 						
-						        &lt;<span class="hljs-selector-tag">p</span> v-html=<span class="hljs-string">"p2"</span>&gt;&lt;/p&gt;
-						
-						        &lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">if</span>=<span class="hljs-string">"p3"</span>&gt;&lt;/p&gt;
-						
-						        &lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">else</span>&gt;&lt;/p&gt;
-						
-						        &lt;<span class="hljs-selector-tag">p</span> v-show=<span class="hljs-string">"p5"</span>&gt;&lt;/p&gt;
-						
-						        &lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">for</span>=<span class="hljs-string">"p in p6"</span>&gt;{{ <span class="hljs-selector-tag">p</span> }}&lt;/p&gt;
-						
-						        &lt;<span class="hljs-selector-tag">p</span> v-on:click=<span class="hljs-string">"showP3"</span>&gt;&lt;/p&gt;
-						
-						        &lt;<span class="hljs-selector-tag">p</span> v-bind:title=<span class="hljs-string">"p7"</span>&gt;&lt;/p&gt;
-						
-						        &lt;<span class="hljs-selector-tag">input</span> v-model=<span class="hljs-string">"p8"</span>&gt;&lt;/p&gt;
-						
-						        &lt;<span class="hljs-selector-tag">p</span> v-cloak&gt;{{ p9 }}&lt;/p&gt;
-						    &lt;div&gt;
-						</code></pre>
+	&lt;<span class="hljs-selector-tag">p</span> v-html=<span class="hljs-string">"p2"</span>&gt;&lt;/p&gt;
+							
+	&lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">if</span>=<span class="hljs-string">"p3"</span>&gt;&lt;/p&gt;
+							
+	&lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">else</span>&gt;&lt;/p&gt;
+							
+	&lt;<span class="hljs-selector-tag">p</span> v-show=<span class="hljs-string">"p5"</span>&gt;&lt;/p&gt;
+							
+	&lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">for</span>=<span class="hljs-string">"p in p6"</span>&gt;{{ <span class="hljs-selector-tag">p</span> }}&lt;/p&gt;
+							
+	&lt;<span class="hljs-selector-tag">p</span> v-on:click=<span class="hljs-string">"showP3"</span>&gt;&lt;/p&gt;
+							
+	&lt;<span class="hljs-selector-tag">p</span> v-bind:title=<span class="hljs-string">"p7"</span>&gt;&lt;/p&gt;
+							
+	&lt;<span class="hljs-selector-tag">input</span> v-model=<span class="hljs-string">"p8"</span>&gt;&lt;/p&gt;
+
+   &lt;div&gt;
+</code></pre>
 							</article>
 						</div>
 					</section>
@@ -276,27 +273,27 @@
 						</div>
 						<div style="left:91.98460396957893px;top:232.05527731404197px;width:800px;height:124.74494527916897px;" class="at-block at-block--pure">
 							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code>npm install -<span class="hljs-keyword">g</span> vue-<span class="hljs-keyword">cli</span>
-								</code></pre>
+</code></pre>
 							</article>
 						</div>
 						<div style="left:91px;top:314.3505843071786px;width:800px;height:113.05880170654797px;" class="at-block at-block--pure">
 							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code>vue init webpack <span class="hljs-keyword">my</span>-project
-								</code></pre>
+</code></pre>
 							</article>
 						</div>
 						<div style="left:90.61231682433686px;top:393.1689853459469px;width:800px;height:113.05880170654797px;" class="at-block at-block--pure">
 							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code>cd <span class="hljs-keyword">my</span>-project
-								</code></pre>
+</code></pre>
 							</article>
 						</div>
 						<div style="left:90.1200148395474px;top:472.98738638471525px;width:800px;height:113.05880170654797px;" class="at-block at-block--pure">
 							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code>npm <span class="hljs-keyword">install</span>
-								</code></pre>
+</code></pre>
 							</article>
 						</div>
 						<div style="left:90.73233166388425px;top:557.298089408273px;width:800px;height:113.05880170654797px;" class="at-block at-block--pure">
 							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code>npm <span class="hljs-built_in">run</span> dev
-								</code></pre>
+</code></pre>
 							</article>
 						</div>
 					</section>
