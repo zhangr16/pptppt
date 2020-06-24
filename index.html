@@ -53,11 +53,11 @@
 						</div>
 						<div style="left:326px;top:274px;width:796px;height:auto;" class="at-block at-block--pure">
 							<article class="at-block-content">
-								<h2><span style="font-size:72px">走进&nbsp;</span>&nbsp; &nbsp; &nbsp;<span style="color:#B0BC00"><em><strong>ue.js</strong></em></span></h2></article>
+								<h2><span style="font-size:72px">走进&nbsp;</span>&nbsp;<span style="color:#B0BC00"><em><strong>node.js</strong></em></span></h2></article>
 						</div>
-						<div style="width:149px;height:149px;left:665px;top:203px;" class="at-block at-block--pure">
+						<!-- <div style="width:149px;height:149px;left:665px;top:203px;" class="at-block at-block--pure">
 							<article class="at-block-content"><img src=http://cn.vuejs.org/images/logo.png /></article>
-						</div>
+						</div> -->
 						<div style="left:94px;top:296px;width:800px;" class="at-block at-block--pure">
 							<article class="at-block-content">
 								<p>@</p>
@@ -72,367 +72,81 @@
 					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
 						<div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure">
 							<article class="at-block-content">
-								<h1>Vue.js简介</h1>
-								<p>&nbsp;</p>
-							</article>
-						</div>
-						<div style="left:89px;top:350px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
+								<h1>node.js简介</h1>
 								<ul>
-									<li>Vue.js是一个构建<span style="color:#E27300">数据驱动</span>的web界面的框架</li>
-									<li>Vue.js是一个响应的<span style="color:#E27300">数据绑定系统</span></li>
-									<li>Vue.js是实现响应的<span style="color:#E27300">数据绑定</span>和组合<span style="color:#E27300">视图组件</span>--<i>MVVM</i></li>									
+									<li>Node.js 采用了 Google Chrome 浏览器的 V8 引擎，速度非常快，性能非常好。</li>
+									<li>同时还提供了很多系统级的 API，如文件操作、网络编程等。</li>
+									<li>浏览器端的 Javascript 代码在运行时会受到各种安全性的限制，对客户系统的操作有限。相比之下，Node.js 则是一个全面的后台运行时，为 Javascript 提供了其他语言能够实现的许多功能。</li>
 								</ul>
 							</article>
 						</div>
 					</section>
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<h1>MV XX</h1>
-						<div style="width:900px;height:480px;left:40px;top:150px;" class="at-block at-block--pure">
-							<article class="at-block-content"><img src=http://cn.vuejs.org/images/mvvm.png /></article>
-						</div>
-					</section>
 					<section>
-						<h1>MV XX</h1>
-						<div style="left:89px;top:250px;width:800px;" class="at-block at-block--pure">
+						<h3>1.事件与回调函数</h3>
+						<div style="left:89px;top:150px;width:800px;" class="at-block at-block--pure">
 							<article class="at-block-content">
 								<ul>
-									<li>Module层与view层的<span style="color:#E27300">解耦</span>--组件化</li><br>
-									<li>简化代码，减少重复</li><br>
-									<li>专注<span style="color:#E27300">数据</span>驱动，<span style="color:#E27300">数据</span>触发事件</li>
+									<li>Node.js实现异步的核心是事件驱动。也就是说，它把每一个任务都当成事件来处理，然后通过Event Loop模拟了异步的效果, 而能体现事件驱动机制本质的最简单形式就是函数的回调。
+									<li>Node中的绝大多数对象，比如HTTP请求，响应，流，都是实现了EventEmitter模块，所以它们可以触发或监听事件。</li>
 								</ul>
 							</article>
 						</div>
 					</section>
 					<section>
 						<article class="at-block-content">
-							<h1>VS Jquery</h1>
-							<div style="left:89px;top:250px;width:800px;" class="at-block at-block--pure">
+							<h3>2.单线程</h3>
+							<div style="left:89px;top:150px;width:800px;" class="at-block at-block--pure">
 								<ul>
-									<li>处理，思维模式</li>
-									<li>API</li>
-									<li>兼容性</li>
-									<li>组件</li>
-									<li>实际应用--购物列表</li>
+									<li>Node.js可以在不新增额外线程的情况下，依然可以对任务进行并发处理 —— Node.js是单线程的</li>
+									<li>它通过事件轮询（event loop）来实现并发操作，对此，我们应该要充分利用这一点 —— 尽可能的避免阻塞操作，取而代之，多使用非阻塞操作</li>
 								</ul>
 							</div>
 						</article>
 					</section>
-					<section>
-						<h3>Jq: 面向过程</h3>
-						<img src="img/1.jpg"/>						
-					</section>
-					<section>
-						<h3>Vue: 面向对象</h3>
-						<img src="img/2.jpg"/>						
-					</section>
-					
 					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<h1>Vue实例</h1></article>
-						</div>
-						<div style="left:10px;top:315px;width:800px;height:500px;" class="at-block at-block--pure">
-								<article class="at-block-content MarkdownBlock">
-									<pre class="hljs"><code class="lang-javascript">
-var <span class="hljs-keyword">vm</span> = <span class="hljs-keyword">new</span> Vue({
-	<span class="hljs-keyword">e</span><span class="hljs-variable">l:</span> <span class="hljs-string">'#demo'</span>,dat<span class="hljs-variable">a:</span> {
-	<span class="hljs-variable">a:</span> <span class="hljs-number">1</span>,
-	<span class="hljs-variable">b:</span> <span class="hljs-number">2</span>
-	},
-	created: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
-							
-	// `this` 指向 <span class="hljs-keyword">vm</span> 实例
-	console.<span class="hljs-built_in">log</span>(<span class="hljs-string">'a is: '</span> + this.<span class="hljs-keyword">a</span>)
-	}
-})
-</code></pre>
-							</article>
-						</div>
-						<div style="left:103.67074754219996px;top:244.67074754219996px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p><span style="font-size:26px">包含数据、模板、挂载元素、方法、生命周期钩子等选项</span></p>
-							</article>
-						</div>
-					</section>
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:85.19384158783157px;top:15.600074197736966px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<h1>Vue常用指令</h1></article>
-						</div>
-						<div style="left:91.68614357262103px;top:143.7599703209052px;width:800px;height:550.6399554813579px;" class="at-block at-block--pure">
-							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code class="lang-html">    &lt;<span class="hljs-selector-tag">div</span> id=<span class="hljs-string">"demo"</span>&gt;
-
-	&lt;<span class="hljs-selector-tag">p</span> v-text=<span class="hljs-string">"p1"</span>&gt;&lt;/p&gt;
-						
-	&lt;<span class="hljs-selector-tag">p</span> v-html=<span class="hljs-string">"p2"</span>&gt;&lt;/p&gt;
-							
-	&lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">if</span>=<span class="hljs-string">"p3"</span>&gt;&lt;/p&gt;
-							
-	&lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">else</span>&gt;&lt;/p&gt;
-							
-	&lt;<span class="hljs-selector-tag">p</span> v-show=<span class="hljs-string">"p5"</span>&gt;&lt;/p&gt;
-							
-	&lt;<span class="hljs-selector-tag">p</span> v-<span class="hljs-keyword">for</span>=<span class="hljs-string">"p in p6"</span>&gt;{{ <span class="hljs-selector-tag">p</span> }}&lt;/p&gt;
-							
-	&lt;<span class="hljs-selector-tag">p</span> v-on:click=<span class="hljs-string">"showP3"</span>&gt;&lt;/p&gt;
-							
-	&lt;<span class="hljs-selector-tag">p</span> v-bind:title=<span class="hljs-string">"p7"</span>&gt;&lt;/p&gt;
-							
-	&lt;<span class="hljs-selector-tag">input</span> v-model=<span class="hljs-string">"p8"</span>&gt;&lt;/p&gt;
-
-   &lt;div&gt;
-</code></pre>
-							</article>
-						</div>
-					</section>
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<h1>Vue.js技术栈</h1></article>
-						</div>
-						<div style="left:235.8548005207291px;top:261.4918900864763px;width:198.81283620849567px;height:auto0;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p><span style="font-size:48px"><span style="color:#A4DD00">Vue.js</span></span>
-								</p>
-							</article>
-						</div>
-						<div style="left:210.67635496331863px;top:405.3682953742418px;width:259.84047486551657px;height:auto0;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p><span style="font-size:48px"><span style="color:#E27300">vue-router</span></span>
-								</p>
-							</article>
-						</div>
-						<div style="left:246.52199340850615px;top:479.2514087202517px;width:174.14208866629565px;height:auto;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p><span style="font-size:48px"><span style="color:#73D8FF">Vuex</span></span>
-								</p>
-							</article>
-						</div>
-						<div style="left:260.14339553278063px;top:555.9387044873379px;width:148.1728807271378px;height:auto;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p><span style="font-size:48px"><span style="color:#F44E3B">ES6</span></span>
-								</p>
-							</article>
-						</div>
-						<div style="left:516.5693852515744px;top:336.2671253028294px;width:237.76664811723242px;height:auto;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p><span style="color:#7B64FF"><span style="font-size:48px">webpack</span></span>
-								</p>
-							</article>
-						</div>
-						<div style="left:551.9612574611036px;top:258.5242608106496px;width:167.64978668150616px;height:auto;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p><span style="color:#FCC400"><span style="font-size:48px">NPM</span></span>
-								</p>
-							</article>
-						</div>
-						<div style="left:520.39512872803px;top:408.84164667418725px;width:239.06510851419029px;height:auto0;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p><span style="font-size:48px">Babel</span></p>
-							</article>
-						</div>
-						<div style="left:174.38452977184195px;top:339.75681691708405px;width:323.46503431645334px;height:auto;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p><span style="font-size:48px"><span style="color:#FA28FF">vue-cli</span></span>
-								</p>
-							</article>
-						</div>
-					</section>
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<h1>构建大型应用</h1></article>
-						</div>
-						<div style="left:203.6521981079577px;top:278.97236134297896px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<ul>
-									<li>项目前端目录及文件构建（<span style="color:#E27300">vue-cli</span>）</li>
-								</ul>
-							</article>
-						</div>
-						<div style="left:201.96605453533667px;top:365.5815247634946px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<ul>
-									<li>组件编写及通信（<span style="color:#E27300">什么是组件？</span>）</li>
-								</ul>
-							</article>
-						</div>
-						<div style="left:198.98145056575774px;top:454.7876089779261px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<ul>
-									<li>插件使用与文件打包（<span style="color:#E27300">webpack</span>）</li>
-								</ul>
-							</article>
-						</div>
-					</section>
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<h1>vue-cli构建</h1></article>
-						</div>
-						<div style="left:91.98460396957893px;top:232.05527731404197px;width:800px;height:124.74494527916897px;" class="at-block at-block--pure">
-							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code>npm install -<span class="hljs-keyword">g</span> vue-<span class="hljs-keyword">cli</span>
-</code></pre>
-							</article>
-						</div>
-						<div style="left:91px;top:314.3505843071786px;width:800px;height:113.05880170654797px;" class="at-block at-block--pure">
-							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code>vue init webpack <span class="hljs-keyword">my</span>-project
-</code></pre>
-							</article>
-						</div>
-						<div style="left:90.61231682433686px;top:393.1689853459469px;width:800px;height:113.05880170654797px;" class="at-block at-block--pure">
-							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code>cd <span class="hljs-keyword">my</span>-project
-</code></pre>
-							</article>
-						</div>
-						<div style="left:90.1200148395474px;top:472.98738638471525px;width:800px;height:113.05880170654797px;" class="at-block at-block--pure">
-							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code>npm <span class="hljs-keyword">install</span>
-</code></pre>
-							</article>
-						</div>
-						<div style="left:90.73233166388425px;top:557.298089408273px;width:800px;height:113.05880170654797px;" class="at-block at-block--pure">
-							<article class="at-block-content MarkdownBlock"><pre class="hljs"><code>npm <span class="hljs-built_in">run</span> dev
-</code></pre>
-							</article>
-						</div>
-					</section>
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:79px;top:270px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<h1>什么是组件？</h1></article>
-						</div>
-					</section>
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="width:636.6423357664235px;height:700px;left:329.18022332435646px;top:-7.790762381747357px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<img src="img/4.jpg" />
-							</article>
-						</div>
-						<div style="left:112.86458913003156px;top:97.94472268595811px;width:183.23131144500087px;height:auto0;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p><span style="color:#FE9200"><span style="font-size:72px">单</span></span>
-								</p>
-								<p><span style="color:#FE9200"><span style="font-size:72px">文</span></span>
-								</p>
-								<p><span style="color:#FE9200"><span style="font-size:72px">件</span></span>
-								</p>
-								<p><span style="color:#FE9200"><span style="font-size:72px">组</span></span>
-								</p>
-								<p><span style="color:#FE9200"><span style="font-size:72px">件</span></span>
-								</p>
-							</article>
-						</div>
-					</section>
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:79px;top:170px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<h1><span style="color: deepskyblue;" >什么是单页面？</h1>
-									<br>
-								<ul style="font-size: 24px;">
-									<li>(spa)单页面是指只有一个主页面的应用，<br>浏览器一开始要加载所有必须的 html, js, css，且所有的页面内容都包含在这个主页面中。</li>
-									<li>会分开写（页面片段），然后在交互的时候由路由程序动态载入。</li>
-								</ul>
-							</article>
+						<h3>3.非堵塞异步IO</h3>
+						<ul>
+							<li style="font-size:18px">Node.js实现异步的核心是事件驱动。也就是说，它把每一个任务都当成事件来处理，然后通过Event Loop模拟了异步的效果, 而能体现事件驱动机制本质的最简单形式就是函数的回调。</li>
+						</ul>
+						<div style="width:900px;height:580px;left:40px;top:150px;" class="at-block at-block--pure">
+							<article class="at-block-content"><img src="https://pic3.zhimg.com/v2-3e0e1983d7ab3452a55f820b36b60652_b.jpg" /></article>
 						</div>
 					</section>
 					
+					
 					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure">
+						<div style="left:83px;top:0px;width:800px;" class="at-block at-block--pure">
 							<article class="at-block-content">
-								<h1>特点</h1></article>
-						</div>
-						<div style="left:100px;top:240px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p style="text-align:left"><span style="color:#E27300">优势：</span></p>
-							</article>
-						</div>
-						<div style="left:0px;top:240px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p>1. 良好的交互体验</p>
-							</article>
-						</div>
-						<div style="left:205px;top:300px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p>2. 良好的前后端工作分离模式(RESTful规约)</p>
-							</article>
-						</div>
-						<div style="left:0px;top:360px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p>3. 减轻服务器压力</p>
-							</article>
-						</div>
-						<div style="left:-250px;top:450px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p><span style="color:#E27300">缺陷：</span></p>
-							</article>
-						</div>
-						<div style="left:-25px;top:450px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p>1. SEO难度较高</p>
-							</article>
-						</div>
-						<div style="left:0px;top:530px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p>2. 前进、后退管理 </p>
-							</article>
-						</div>
-					</section>
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<h1>什么是路由？</h1>
-							</article>
-						</div>
-						<div style="left:78px;top:270px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<ul>
-									<li><span style="font-size:40px">URL:</span>
-										<ol style="font-size: 30px;">
-											<li>域名</li>
-											<li>协议</li>
-											<li>端口</li>
-											<li>路径</li>										
-											<li><span style="color:#73D8FF">#锚点(非必需)</span></li>
-										</ol>
-									</li>
-									<br>
-									<li><span style="font-size:40px">解决问题:</span>
-										<ol style="font-size: 30px;">
-											<li>各个页面和组件之间的跳转问题： 组件管理</li>
-											
-											<li>各个组件之间相互调用: 方便<span style="color:#73D8FF">解耦, 交互 -- VUEX</span></li>
-										</ol>
-									</li>
-								</ul>
+								<article>
+									<img src="img/a1.jpg"/>
+								</article>
 							</article>
 						</div>
 					</section>
 					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
 						<div style="left:83px;top:0px;width:800px;" class="at-block at-block--pure">
 							<article class="at-block-content">
-								<h1>VUEX</h1>
 								<article>
-									<img src="img/3.jpg"/>
+									<img src="img/a2.jpg"/>
 								</article>
 							</article>
 						</div>
 					</section>
 					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:83px;top:225px;width:800px;" class="at-block at-block--pure">
+						<div style="left:83px;top:0px;width:800px;" class="at-block at-block--pure">
 							<article class="at-block-content">
-								1. 关于项目
-								<br/><a target="blank" href="https://github.com/zhangr16/zrz_tdx">pc</a>
-								<br/><a target="blank" href="https://github.com/zhangr16/tdx_mobile">mobile</a>
-								<br/>
-								<!-- <img src="img/5.jpg" /> -->
-								2. 前端自动化 工程化
-								<a target="blank" href="https://www.npmjs.com/">npm</a>
-								<a target="blank" href="https://www.webpackjs.com/">webpack</a>
-								<br/>
-								3. 多工程维度代码统一（rn, flutter, uni-app）, electron(桌面应用), <a target="blank" href="https://zhuanlan.zhihu.com/p/97226980">微前端</a>
-								<br/>
-								4. <a target="blank" href="https://zh.nuxtjs.org/">ssr--nuxt</a>
+								<article>
+									<img src="img/a3.png"/>
+								</article>
+							</article>
+						</div>
+					</section>
+					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
+						<div style="left:83px;top:0px;width:800px;" class="at-block at-block--pure">
+							<article class="at-block-content">
+								<article>
+									<img src="img/a4.png"/>
+								</article>
 							</article>
 						</div>
 					</section>
