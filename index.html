@@ -1,187 +1,397 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
 
-	<head>
-		<meta charset="utf-8">
+    <title>zrz-ppt</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <!-- Reveal base style -->
+    <link
+      rel="stylesheet"
+      href="https://yanshuo.io/assets/player/css/reveal.min.css"
+    />
+    <!-- Yanshuo.io seed style -->
+    <link
+      rel="stylesheet"
+      href="https://yanshuo.io/assets/player/atcss/at-block.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://yanshuo.io/assets/player/atcss/at-hljs-theme-bundler.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://yanshuo.io/assets/player/atcss/at-reveal-theme-bundler.min.css"
+    />
 
-		<title>zrz-ppt</title>
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<!-- Reveal base style -->
-		<link rel="stylesheet" href="https://yanshuo.io/assets/player/css/reveal.min.css">
-		<!-- Yanshuo.io seed style -->
-		<link rel="stylesheet" href="https://yanshuo.io/assets/player/atcss/at-block.min.css">
-		<link rel="stylesheet" href="https://yanshuo.io/assets/player/atcss/at-hljs-theme-bundler.min.css">
-		<link rel="stylesheet" href="https://yanshuo.io/assets/player/atcss/at-reveal-theme-bundler.min.css">
+    <!-- Source Sans Web Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://yanshuo.io/assets/player/lib/font/source-sans-pro/source-sans-pro.css"
+    />
 
-		<!-- Source Sans Web Fonts -->
-		<link rel="stylesheet" href="https://yanshuo.io/assets/player/lib/font/source-sans-pro/source-sans-pro.css">
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "https://yanshuo.io/assets/player//css/print/pdf.css"
+        : "";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement('link');
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match(/print-pdf/gi) ? 'https://yanshuo.io/assets/player//css/print/pdf.css' : '';
-			document.getElementsByTagName('head')[0].appendChild(link);
-		</script>
+    <!--[if lt IE 9]>
+      <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
 
-		<!--[if lt IE 9]>
-  		<script src="lib/js/html5shiv.js"></script>
-  		<![endif]-->
+    <!-- style for "critical path" -->
+    <style></style>
+  </head>
 
-		<!-- style for "critical path" -->
-		<style>
+  <body>
+    <!-- TODO: a lightweighted loading -->
 
-		</style>
-	</head>
-
-	<body>
-		<!-- TODO: a lightweighted loading -->
-
-		<!-- main slides -->
-		<div id="YS" class="at-code-lh-NaN" style="width:100%;height:100%;" data-reveal-theme="league" data-highlight-theme="github" data-ys-title="我的演说" data-ys-user="劳卜" data-ys-transition="slide" data-ys-backgroundTransition="concave" data-ys-transitionSpeed="default">
-			<div class="reveal">
-				<div class="slides">
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:-134px;top:257px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<h1>前端开发</h1>
-								<p>&nbsp;</p>
-							</article>
-						</div>
-						<div style="left:326px;top:274px;width:796px;height:auto;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<h2><span style="font-size:72px">走进&nbsp;</span>&nbsp;<span style="color:#B0BC00"><em><strong>node.js</strong></em></span></h2></article>
-						</div>
-						<!-- <div style="width:149px;height:149px;left:665px;top:203px;" class="at-block at-block--pure">
+    <!-- main slides -->
+    <div
+      id="YS"
+      class="at-code-lh-NaN"
+      style="width: 100%; height: 100%;"
+      data-reveal-theme="league"
+      data-highlight-theme="github"
+      data-ys-title="我的演说"
+      data-ys-user="劳卜"
+      data-ys-transition="slide"
+      data-ys-backgroundTransition="concave"
+      data-ys-transitionSpeed="default"
+    >
+      <div class="reveal">
+        <div class="slides">
+          <section
+            data-notes=""
+            data-background-video-loop="true"
+            data-background-video-muted="true"
+            data-background-color=""
+            data-transition="slide-in slide-out"
+          >
+            <div
+              style="left: -134px; top: 257px; width: 800px;"
+              class="at-block at-block--pure"
+            >
+              <article class="at-block-content">
+                <h1>前端开发</h1>
+                <p>&nbsp;</p>
+              </article>
+            </div>
+            <div
+              style="left: 326px; top: 274px; width: 796px; height: auto;"
+              class="at-block at-block--pure"
+            >
+              <article class="at-block-content">
+                <h2>
+                  <span style="font-size: 72px;">走进&nbsp;</span>&nbsp;<span
+                    style="color: #b0bc00;"
+                    ><em><strong>node.js</strong></em></span
+                  >
+                </h2>
+              </article>
+            </div>
+            <!-- <div style="width:149px;height:149px;left:665px;top:203px;" class="at-block at-block--pure">
 							<article class="at-block-content"><img src=http://cn.vuejs.org/images/logo.png /></article>
 						</div> -->
-						<div style="left:94px;top:296px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p>@</p>
-							</article>
-						</div>
-						<div style="left:91.98460396957893px;top:491.3782229641996px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<p><span style="font-size:22px">By &nbsp;张润泽</span></p>
-							</article>
-						</div>
-					</section>
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:79px;top:100px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<h1>node.js简介</h1>
-								<ul>
-									<li>Node.js 采用了 Google Chrome 浏览器的 V8 引擎，速度非常快，性能非常好。</li>
-									<li>同时还提供了很多系统级的 API，如文件操作、网络编程等。</li>
-									<li>浏览器端的 Javascript 代码在运行时会受到各种安全性的限制，对客户系统的操作有限。相比之下，Node.js 则是一个全面的后台运行时，为 Javascript 提供了其他语言能够实现的许多功能。</li>
-								</ul>
-							</article>
-						</div>
-					</section>
-					<section>
-						<h3>1.事件与回调函数</h3>
-						<div style="left:89px;top:150px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<ul>
-									<li>Node.js实现异步的核心是事件驱动。也就是说，它把每一个任务都当成事件来处理，然后通过Event Loop模拟了异步的效果, 而能体现事件驱动机制本质的最简单形式就是函数的回调。
-									<li>Node中的绝大多数对象，比如HTTP请求，响应，流，都是实现了EventEmitter模块，所以它们可以触发或监听事件。</li>
-								</ul>
-							</article>
-						</div>
-					</section>
-					<section>
-						<article class="at-block-content">
-							<h3>2.单线程</h3>
-							<div style="left:89px;top:150px;width:800px;" class="at-block at-block--pure">
-								<ul>
-									<li>Node.js可以在不新增额外线程的情况下，依然可以对任务进行并发处理 —— Node.js是单线程的</li>
-									<li>它通过事件轮询（event loop）来实现并发操作，对此，我们应该要充分利用这一点 —— 尽可能的避免阻塞操作，取而代之，多使用非阻塞操作</li>
-								</ul>
-							</div>
-						</article>
-					</section>
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<h3>3.非堵塞异步IO</h3>
-						<ul>
-							<li style="font-size:18px">Node.js实现异步的核心是事件驱动。也就是说，它把每一个任务都当成事件来处理，然后通过Event Loop模拟了异步的效果, 而能体现事件驱动机制本质的最简单形式就是函数的回调。</li>
-						</ul>
-						<div style="width:900px;height:580px;left:40px;top:150px;" class="at-block at-block--pure">
-							<article class="at-block-content"><img src="https://pic3.zhimg.com/v2-3e0e1983d7ab3452a55f820b36b60652_b.jpg" /></article>
-						</div>
-					</section>
-					
-					
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:83px;top:0px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<article>
-									<img src="img/a1.jpg"/>
-								</article>
-							</article>
-						</div>
-					</section>
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:83px;top:0px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<article>
-									<img src="img/a2.jpg"/>
-								</article>
-							</article>
-						</div>
-					</section>
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:83px;top:0px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<article>
-									<img src="img/a3.png"/>
-								</article>
-							</article>
-						</div>
-					</section>
-					<section data-notes="" data-background-video-loop="true" data-background-video-muted="true" data-background-color="" data-transition="slide-in slide-out">
-						<div style="left:83px;top:0px;width:800px;" class="at-block at-block--pure">
-							<article class="at-block-content">
-								<article>
-									<img src="img/a4.png"/>
-								</article>
-							</article>
-						</div>
-					</section>
-					<style>
-						.at-block {
-							position: absolute
-						}
-					</style>
-				</div>
-			</div>
-		</div>
+            <div
+              style="left: 94px; top: 296px; width: 800px;"
+              class="at-block at-block--pure"
+            >
+              <article class="at-block-content">
+                <p>@</p>
+              </article>
+            </div>
+            <div
+              style="
+                left: 91.98460396957893px;
+                top: 491.3782229641996px;
+                width: 800px;
+              "
+              class="at-block at-block--pure"
+            >
+              <article class="at-block-content">
+                <p><span style="font-size: 22px;">By &nbsp;张润泽</span></p>
+              </article>
+            </div>
+          </section>
+          <section
+            data-notes=""
+            data-background-video-loop="true"
+            data-background-video-muted="true"
+            data-background-color=""
+            data-transition="slide-in slide-out"
+          >
+            <div
+              style="left: 79px; top: 100px; width: 800px;"
+              class="at-block at-block--pure"
+            >
+              <article class="at-block-content">
+                <h1>node.js简介</h1>
+                <ul>
+                  <li>
+                    Node.js 采用了 Google Chrome 浏览器的 V8
+                    引擎，速度非常快，性能非常好。
+                  </li>
+                  <li>
+                    同时还提供了很多系统级的 API，如文件操作、网络编程等。
+                  </li>
+                  <li>
+                    浏览器端的 Javascript
+                    代码在运行时会受到各种安全性的限制，对客户系统的操作有限。相比之下，Node.js
+                    则是一个全面的后台运行时，为 Javascript
+                    提供了其他语言能够实现的许多功能。
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </section>
+          <section>
+            <h3>1.事件与回调函数</h3>
+            <div
+              style="left: 89px; top: 150px; width: 800px;"
+              class="at-block at-block--pure"
+            >
+              <article class="at-block-content">
+                <ul>
+                  <li>
+                    Node.js实现异步的核心是事件驱动。也就是说，它把每一个任务都当成事件来处理，然后通过Event
+                    Loop模拟了异步的效果,
+                    而能体现事件驱动机制本质的最简单形式就是函数的回调。
+                  </li>
+                  <li>
+                    Node中的绝大多数对象，比如HTTP请求，响应，流，都是实现了EventEmitter模块，所以它们可以触发或监听事件。
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </section>
+          <section>
+            <article class="at-block-content">
+              <h3>2.单线程</h3>
+              <div
+                style="left: 89px; top: 150px; width: 800px;"
+                class="at-block at-block--pure"
+              >
+                <ul>
+                  <li>
+                    Node.js可以在不新增额外线程的情况下，依然可以对任务进行并发处理
+                    —— Node.js是单线程的
+                  </li>
+                  <li>
+                    它通过事件轮询（event
+                    loop）来实现并发操作，对此，我们应该要充分利用这一点 ——
+                    尽可能的避免阻塞操作，取而代之，多使用非阻塞操作
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </section>
+          <section
+            data-notes=""
+            data-background-video-loop="true"
+            data-background-video-muted="true"
+            data-background-color=""
+            data-transition="slide-in slide-out"
+          >
+            <h3>3.非堵塞异步IO</h3>
+            <ul>
+              <li style="font-size: 18px;">
+                Node.js实现异步的核心是事件驱动。也就是说，它把每一个任务都当成事件来处理，然后通过Event
+                Loop模拟了异步的效果,
+                而能体现事件驱动机制本质的最简单形式就是函数的回调。
+              </li>
+            </ul>
+            <div
+              style="width: 900px; height: 580px; left: 40px; top: 150px;"
+              class="at-block at-block--pure"
+            >
+              <article class="at-block-content">
+                <img
+                  src="https://pic3.zhimg.com/v2-3e0e1983d7ab3452a55f820b36b60652_b.jpg"
+                />
+              </article>
+            </div>
+          </section>
 
-		<!-- dependencies -->
-		<script src="https://yanshuo.io/assets/player/lib/js/head.min.js"></script>
-		<script src="https://yanshuo.io/assets/player/js/reveal.min.js"></script>
+          <section
+            data-notes=""
+            data-background-video-loop="true"
+            data-background-video-muted="true"
+            data-background-color=""
+            data-transition="slide-in slide-out"
+          >
+            <div
+              style="left: 83px; top: 0px; width: 800px;"
+              class="at-block at-block--pure"
+            >
+              <h3>token加密</h3>
+              <article class="at-block-content">
+                <article>
+                  <img src="img/a1.jpg" />
+                </article>
+              </article>
+            </div>
+          </section>
+          <section
+            data-notes=""
+            data-background-video-loop="true"
+            data-background-video-muted="true"
+            data-background-color=""
+            data-transition="slide-in slide-out"
+          >
+            <div
+              style="left: 83px; top: 0px; width: 800px;"
+              class="at-block at-block--pure"
+            >
+              <h3>model层</h3>
+              <article class="at-block-content">
+                <article>
+                  <img src="img/a2.jpg" />
+                </article>
+              </article>
+            </div>
+          </section>
+          <section
+            data-notes=""
+            data-background-video-loop="true"
+            data-background-video-muted="true"
+            data-background-color=""
+            data-transition="slide-in slide-out"
+          >
+            <div
+              style="left: 83px; top: 0px; width: 800px;"
+              class="at-block at-block--pure"
+            >
+              <h3>Mongoose是在node.js异步环境下对mongodb进行便捷操作的对象模型工具</h3>
+              <article class="at-block-content">
+                <article>
+                  <img src="img/a5.jpg" />
+                </article>
+              </article>
+            </div>
+          </section>
+          <section
+            data-notes=""
+            data-background-video-loop="true"
+            data-background-video-muted="true"
+            data-background-color=""
+            data-transition="slide-in slide-out"
+          >
+            <div
+              style="left: 83px; top: 0px; width: 500px;"
+              class="at-block at-block--pure"
+            >
+              <h3>数据库配置</h3>
+              <article class="at-block-content">
+                <article>
+                  <img src="img/a3.png" />
+                </article>
+              </article>
+            </div>
+          </section>
+          <section
+            data-notes=""
+            data-background-video-loop="true"
+            data-background-video-muted="true"
+            data-background-color=""
+            data-transition="slide-in slide-out"
+          >
+            <div
+              style="left: 83px; top: 0px; width: 600px;"
+              class="at-block at-block--pure"
+            >
+              <h3>路由api</h3>
+              <article class="at-block-content">
+                <article>
+                  <img src="img/a4.png" />
+                </article>
+              </article>
+            </div>
+          </section>
+          <section
+            data-notes=""
+            data-background-video-loop="true"
+            data-background-video-muted="true"
+            data-background-color=""
+            data-transition="slide-in slide-out"
+          >
+            <div
+              style="left: 83px; top: 0px; width: 600px;"
+              class="at-block at-block--pure"
+            >
+              <h3>node vs php</h3>
+              <article class="at-block-content">
+                <ul>
+                  <li>
+                    Node.js 他用的是JavaScript引擎，那么注定它是单线程
+                    ，使用异步方法开辟多个任务，无需像php等待上个任务线程使用结束之后给下个使用，
+                    PHP也是单线程但是它借用Apache服务器提供多线程服务
+                  </li>
+                  <li>
+                    php ： 优化sql
+                    ，用组件，用缓存，为了让线程尽快结束，进行下一次任务
+                    node：单线程 、异步、事件驱动
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </section>
+          <style>
+            .at-block {
+              position: absolute;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
 
-		<!-- init -->
-		<script>
-			Reveal.initialize({
-				controls: true,
-				history: true,
-				center: false,
-				transition: 'slide',
-				backgroundTransition: 'concave',
-				transitionSpeed: 'default',
-				// no marked.js
-				// no markdown.js
-				// no highlight.js
-				dependencies: [
-					{ src: 'https://yanshuo.io/assets/player/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'https://yanshuo.io/assets/player/plugin/zoom-js/zoom.js', async: true },
-					{ src: 'https://yanshuo.io/assets/player/plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-	</body>
+    <!-- dependencies -->
+    <script src="https://yanshuo.io/assets/player/lib/js/head.min.js"></script>
+    <script src="https://yanshuo.io/assets/player/js/reveal.min.js"></script>
 
+    <!-- init -->
+    <script>
+      Reveal.initialize({
+        controls: true,
+        history: true,
+        center: false,
+        transition: "slide",
+        backgroundTransition: "concave",
+        transitionSpeed: "default",
+        // no marked.js
+        // no markdown.js
+        // no highlight.js
+        dependencies: [
+          {
+            src: "https://yanshuo.io/assets/player/lib/js/classList.js",
+            condition: function () {
+              return !document.body.classList;
+            },
+          },
+          {
+            src: "https://yanshuo.io/assets/player/plugin/zoom-js/zoom.js",
+            async: true,
+          },
+          {
+            src: "https://yanshuo.io/assets/player/plugin/notes/notes.js",
+            async: true,
+          },
+        ],
+      });
+    </script>
+  </body>
 </html>
